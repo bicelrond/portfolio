@@ -50,11 +50,33 @@ img{
 i{
     color: black;
     font-size: 30px;
- 
 }
-a{
-    padding-left: 10px;
+
+/* Links  */
+i:hover{
+    color: #FCA700;
 }
+a:hover{
+    color: black;
+    
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;;
+}
+a:-moz-any-link{
+    color: white;
+} 
+
+
+li{
+    padding-right: 10px;
+}
+/* button:hover{
+    color: #FCA700;
+} */
 /* Oculta el punto de la lista desordenada  */
 /* Documentacion listashttps://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
 ul{
