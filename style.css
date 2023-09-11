@@ -1,39 +1,65 @@
 /* Estilos generales a elementos html - css  */
+*{
+    margin:0px;
+    padding: 0px;
+}
 body{
     height: 5120px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
+/* Cambiar por lenguaje semantico  */
 div{
+    height: 1080px;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1{
     font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 50px;
+    color: black;
 }
 h1, h2, h3{
     font-family: 'Ubuntu', sans-serif;
+
 }
 h2{
     font-size: 25px;
     text-align: center;
+    line-height: 25px;
 }
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 17px
+    font-size: 17px; 
+    color: black;
 }
-a{
+span{
     color: #FCA700;
 }
 img{
     width: 30px;
 }
-
+/* Redes sociales  */
+i{
+    color: black;
+    font-size: 30px;
+ 
+}
+a{
+    padding-left: 10px;
+}
+/* Oculta el punto de la lista desordenada  */
+/* Documentacion listashttps://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
+ul{
+    list-style: none;
+}
 /* Estilos a #id's  */
 #home{
     height: 864px;
@@ -41,8 +67,17 @@ img{
 #nav{
     height: 144px;
     font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    
 }
 
+/* Posiciona la barra de navegacion ordenada a la derecha 
+y deja de ser una lista con float */
+#nav li {
+	float: left;
+	position: relative;
+	width:auto;
+}
 #img-perfil{
     width: 10%;
 }
@@ -51,11 +86,21 @@ img{
     text-align: center;
 }
 
+
 /* Estilos a .clases  */
 .profesion{
     color: #666060;
     /* text-align: center;  */
     font-size: 25px;
-    margin-top: 0.1%;
+    margin-top: 0%;
+    margin-bottom: 44px;
     text-align: center;
+}
+
+.redes-sociales{
+    float: right;
+	position: relative;
+    margin-top: 90px;
+    margin-right: 10px;
+    
 }
