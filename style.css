@@ -4,40 +4,75 @@
     padding: 0px;
 }
 body{
-    height: 5120px;
+    /* height: 5120px; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    
 }
 
 /* Cambiar por lenguaje semantico  */
-div{
-    height: 1080px;
-    margin-top: 20px;
+nav{
+    /* height: 100px; */
+    font-family: 'Merriweather Sans', sans-serif;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* barra de notificaciones estatica  */
+    position: fixed;
+    width: 100%;
+    background-color: #fff1d6;
+    text-align: center;
+    border-bottom: px #FCA700;
+    height: 80px;
+}
+
+/* Oculta el punto de la lista desordenada  */
+/* Documentacion listashttps://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
+nav ul li {
+    color: black;
+    display:inline-block;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+
+    
+}
+nav ul{
+    list-style: none;
+    text-align:center; /*Centra la lista */
+    height: 80px;
+}
+
+section{
+    height: 730px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: solid black;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 20px;
     line-height: 50px;
     color: black;
 }
 h1, h2, h3{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 
 }
 h2{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     line-height: 25px;
 }
-
+h3{
+    color: black;
+}
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 17px; 
+    font-size: 18px; 
     color: black;
 }
 span{
@@ -45,6 +80,9 @@ span{
 }
 img{
     width: 30px;
+}
+.project-img{
+    width: 20%;
 }
 /* Redes sociales  */
 i{
@@ -56,49 +94,49 @@ i{
 i:hover{
     color: #FCA700;
 }
-a:hover{
-    color: black;
-    
-}
+
 a:any-link{
-    color: white;
+    color: black;  
 }
 a:-webkit-any-link{
-    color: white;;
+    color: black;
 }
 a:-moz-any-link{
-    color: white;
+    color: black;
 } 
-
-
-li{
-    padding-right: 10px;
+a:hover{
+    color: #FCA700;   
 }
-/* button:hover{
-    color: #FCA700;
-} */
-/* Oculta el punto de la lista desordenada  */
-/* Documentacion listashttps://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
-ul{
-    list-style: none;
+a{
+    text-decoration: none;
+    color: black;
 }
+
+/* flexbox  */
+
+/* .container{ */
+    /* display: flex; */
+    /* flex-direction:row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+/* } */
+
 /* Estilos a #id's  */
 #home{
-    height: 864px;
-}
-#nav{
-    height: 144px;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: black;
-    
+    height: 650px;
+    padding-top: 200px;
+    /* border-bottom: solid black; */
 }
 
 /* Posiciona la barra de navegacion ordenada a la derecha 
 y deja de ser una lista con float */
-#nav li {
-	float: left;
-	position: relative;
-	width:auto;
+.redes-sociales{
+    margin-top: 200px;
+    margin-right: 10px;
+    float: right;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border: solid black;
 }
 #img-perfil{
     width: 10%;
@@ -113,16 +151,11 @@ y deja de ser una lista con float */
 .profesion{
     color: #666060;
     /* text-align: center;  */
-    font-size: 25px;
+    font-size: 23px;
     margin-top: 0%;
     margin-bottom: 44px;
     text-align: center;
 }
-
-.redes-sociales{
-    float: right;
-	position: relative;
-    margin-top: 90px;
-    margin-right: 10px;
-    
+.nav{
+    font-size: 19px;
 }
