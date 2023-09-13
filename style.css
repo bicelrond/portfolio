@@ -7,6 +7,8 @@ body{
     /* height: 5120px; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
 /* Barra de navegacion */
@@ -98,6 +100,7 @@ button {
     display: block;
     width: 200px;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 /* ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID  */
@@ -106,6 +109,7 @@ button {
 #home{
     height: 650px;
     padding-top: 200px;
+    
 }
 #about-me{
     text-align: center;
@@ -116,6 +120,8 @@ y deja de ser una lista con float */
 /* Segunda seccion  */
 #project{
     padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Seccion proyectos FLEX */
@@ -126,8 +132,30 @@ y deja de ser una lista con float */
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px 5px;
-    
+    margin-top: 70px;
 } 
+#see-more{
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 70px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: black;
+    font-family: 'League Spartan', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    color: #FCA700;
+}
+
+#see-more:hover{
+    background-color: #FCA700;
+    color: black;   
+}
+
 
 /* Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases  */
 
@@ -167,25 +195,33 @@ y deja de ser una lista con float */
     margin-top: 15px;
     width: 100px;
     height: 40px;
-    border:  transparent;
-    color: black;
-    background-color: #FCA700;
+    border:  transparent; 
     /* hacer bordes redondos  */
     border-radius: 50px;
     font-size: 18px;
     font-family: 'League Spartan', sans-serif;
+    color: black;
+    background-color: #fca80091;
+}
+.info-project:hover{
+    background-color: #FCA700;
+    color: black; 
+    /* transition: background-color 0.5s;  */
 }
 
 /* Imagenes  */
 .project-portfolio .project-img{
-    width: 80%;
-    padding-left: 40px;
+     width: 80%; 
+    /* padding-left: 40px; */
+    margin-top: 15px;  
     
 }
 
 /* Ancho de ARTICLE  */
 .project-portfolio{
     width: 350px;
+    background-color: #fbf5ea;
+    border-radius: 50px;
 }
 
 
@@ -202,4 +238,11 @@ y deja de ser una lista con float */
 /* Margenes entre iconos de redes en seccion PROJECT */
 .network-project i{
     margin: 15px;
+}
+
+.separacion-project{
+    margin-top: 10px;
+    height: -1px;
+    padding-top:2px ;
+    background-color: #fca80091;
 }
