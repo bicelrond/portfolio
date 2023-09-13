@@ -1,4 +1,4 @@
-/* Estilos generales a elementos html - css  */
+/* ELEMENTOS ELEMENTOS ELEMENTOS ELEMENTOS ELEMENTOS ELEMENTOS ELEMENTOS ELEMENTOS  */
 *{
     margin:0px;
     padding: 0px;
@@ -9,24 +9,17 @@ body{
     color: white;
     
 }
-
-/* Cambiar por lenguaje semantico  */
+/* Barra de navegacion */
 nav{
-    /* height: 100px; */
     font-family: 'Merriweather Sans', sans-serif;
-    /* padding-left: 50px;
-    padding-right: 50px; */
-    /* barra de notificaciones estatica  */
     position: fixed;
     width: 100%;
-    background-color: #fff1d6;
+    background-color: #fbf5ea;
     text-align: center;
-    border-bottom: px #FCA700;
     height: 80px;
 }
 
-/* Oculta el punto de la lista desordenada  */
-/* Documentacion listashttps://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
+/* Documentacion listas https://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
 nav ul li {
     color: black;
     display:inline-block;
@@ -37,20 +30,21 @@ nav ul li {
     
 }
 nav ul{
-    list-style: none;
+    list-style: none; /* Oculta el punto de la lista desordenada  */
     text-align:center; /*Centra la lista */
     height: 80px;
 }
 
+/* Secciones en general*/
 section{
     height: 730px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
     border-bottom: solid black;
 }
 
+/* Entradas de texto */
 h1{
     font-size: 45px;
     text-align: center;
@@ -60,7 +54,6 @@ h1{
 }
 h1, h2, h3{
     font-family: 'League Spartan', sans-serif;
-
 }
 h2{
     font-size: 30px;
@@ -75,30 +68,13 @@ p{
     font-size: 18px; 
     color: black;
 }
+/* Cambio de color */
 span{
     color: #FCA700;
     font-size: 45px;
 }
-img{
-    width: 30px;
-}
-.project-img{
-    width: 20%;
-}
-/* Redes sociales  */
 
-/* Arreglo i dentro de a  */
-/* 
-i{
-    color: black;
-    font-size: 30px;
-
-i:hover{
-    color: #FCA700;
-} */
-/* Links  */
-
-
+/* Animacion a enlaces internos y externos */
 a:any-link{
     color: black;  
 }
@@ -117,41 +93,48 @@ a{
     font-size: 30px;
 }
 
-/* flexbox  */
+/* Centrar un button  */
+button {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
 
-/* .container{ */
-    /* display: flex; */
-    /* flex-direction:row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-/* } */
+/* ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID  */
 
-/* Estilos a #id's  */
+/* Configuracion por la barra de navegacion  */
 #home{
     height: 650px;
     padding-top: 200px;
-    /* border-bottom: solid black; */
 }
-
-/* Posiciona la barra de navegacion ordenada a la derecha 
-y deja de ser una lista con float */
-.redes-sociales{
-    margin-top: 200px;
-    margin-right: 10px;
-    float: right;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-    border: solid black;
-}
-#img-perfil{
-    width: 10%;
-}
-
 #about-me{
     text-align: center;
 }
+/* Posiciona la barra de navegacion ordenada a la derecha 
+y deja de ser una lista con float */
 
+/* Segunda seccion  */
+#project{
+    padding-top: 50px;
+}
 
+/* Seccion proyectos FLEX */
+#contenedor {
+    /* background-color: #e8aeae; */
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 5px;
+    
+} 
+
+/* Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases  */
+
+/* Barra de navegacion */
+.nav{
+    font-size: 19px;
+}
 /* Estilos a .clases  */
 .profesion{
     color: #666060;
@@ -161,6 +144,62 @@ y deja de ser una lista con float */
     margin-bottom: 44px;
     text-align: center;
 }
-.nav{
-    font-size: 19px;
+
+/* Cambiar a footer en html */
+.redes-sociales{
+    margin-top: 200px;
+    margin-right: 10px;
+    float: right;
+}
+
+/* Contenedores en seccion PROJECT FLEX */
+
+/* Cambiar nombres de clases  */
+.project-portfolio h3{
+    font-size: 20px;
+    /* width: auto; */
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* boton */
+.project-portfolio .info-project{
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    border:  transparent;
+    color: black;
+    background-color: #FCA700;
+    /* hacer bordes redondos  */
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Imagenes  */
+.project-portfolio .project-img{
+    width: 80%;
+    padding-left: 40px;
+    
+}
+
+/* Ancho de ARTICLE  */
+.project-portfolio{
+    width: 350px;
+}
+
+
+/* Div centrado de seccion PROJECT */
+.network-project{
+    text-align: center;
+    margin: autox;
+    color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+/* Margenes entre iconos de redes en seccion PROJECT */
+.network-project i{
+    margin: 15px;
 }
