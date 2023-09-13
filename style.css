@@ -11,31 +11,7 @@ body{
     margin-right: 50px;
     
 }
-/* Barra de navegacion */
-nav{
-    font-family: 'Merriweather Sans', sans-serif;
-    position: fixed;
-    width: 100%;
-    background-color: #fbf5ea;
-    text-align: center;
-    height: 80px;
-}
 
-/* Documentacion listas https://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
-nav ul li {
-    color: black;
-    display:inline-block;
-    padding-top: 30px;
-    padding-right: 25px;
-    padding-bottom: 20px;
-
-    
-}
-nav ul{
-    list-style: none; /* Oculta el punto de la lista desordenada  */
-    text-align:center; /*Centra la lista */
-    height: 80px;
-}
 
 /* Secciones en general*/
 section{
@@ -95,37 +71,57 @@ a{
     font-size: 30px;
 }
 
-/* Centrar un button  */
-button {
-    display: block;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 15px;
-}
+
 
 /* ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID  */
 
+/* Barra de navegacion */
+#nav-bar{
+    font-family: 'Merriweather Sans', sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: #fbf5ea;
+    text-align: center;
+    height: 80px;
+}
+
+/* Documentacion listas https://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
+#nav-bar #nav-bar__lista .nav-bar__tag{
+    color: black;
+    display:inline-block;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+
+    
+}
+#nav-bar #nav-bar__lista{
+    list-style: none; /* Oculta el punto de la lista desordenada  */
+    text-align:center; /*Centra la lista */
+    height: 80px;
+}
+
 /* Configuracion por la barra de navegacion  */
-#home{
+#section-home{
     height: 650px;
     padding-top: 200px;
     
 }
-#about-me{
+#section-home__about-me{
     text-align: center;
 }
 /* Posiciona la barra de navegacion ordenada a la derecha 
 y deja de ser una lista con float */
 
 /* Segunda seccion  */
-#project{
+#section-project{
     padding-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 /* Seccion proyectos FLEX */
-#contenedor {
+#section-project__container {
     /* background-color: #e8aeae; */
     display: flex;
     flex-direction:  row;
@@ -134,7 +130,7 @@ y deja de ser una lista con float */
     gap: 30px 5px;
     margin-top: 70px;
 } 
-#see-more{
+#section-project__see-more{
     display: block;
     width: 200px;
     margin: auto;
@@ -151,7 +147,7 @@ y deja de ser una lista con float */
     color: #FCA700;
 }
 
-#see-more:hover{
+#section-project__see-more:hover{
     background-color: #FCA700;
     color: black;   
 }
@@ -160,7 +156,7 @@ y deja de ser una lista con float */
 /* Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases  */
 
 /* Barra de navegacion */
-.nav{
+.nav-bar__section{
     font-size: 19px;
 }
 /* Estilos a .clases  */
@@ -183,7 +179,7 @@ y deja de ser una lista con float */
 /* Contenedores en seccion PROJECT FLEX */
 
 /* Cambiar nombres de clases  */
-.project-portfolio h3{
+.section-project__block h3{
     font-size: 20px;
     /* width: auto; */
     text-align: center;
@@ -191,7 +187,7 @@ y deja de ser una lista con float */
 }
 
 /* boton */
-.project-portfolio .info-project{
+.section-project__block .section-project__info{
     margin-top: 15px;
     width: 100px;
     height: 40px;
@@ -210,15 +206,15 @@ y deja de ser una lista con float */
 }
 
 /* Imagenes  */
-.project-portfolio .project-img{
-     width: 80%; 
+.section-project__block .project-img{
+    width: 80%; 
     /* padding-left: 40px; */
     margin-top: 15px;  
     
 }
 
 /* Ancho de ARTICLE  */
-.project-portfolio{
+.section-project__block{
     width: 350px;
     background-color: #fbf5ea;
     border-radius: 50px;
@@ -226,7 +222,7 @@ y deja de ser una lista con float */
 
 
 /* Div centrado de seccion PROJECT */
-.network-project{
+.section-project__project{
     text-align: center;
     margin: autox;
     color: black;
@@ -236,7 +232,7 @@ y deja de ser una lista con float */
 }
 
 /* Margenes entre iconos de redes en seccion PROJECT */
-.network-project i{
+.section-project__project i{
     margin: 15px;
 }
 
@@ -245,4 +241,12 @@ y deja de ser una lista con float */
     height: -1px;
     padding-top:2px ;
     background-color: #fca80091;
+}
+
+/* Centrar un button  */
+.section-project__info {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
 }
