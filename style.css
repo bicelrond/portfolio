@@ -6,12 +6,8 @@
 body{
     /* height: 5120px; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    
+    color: white; 
 }
-
 
 /* Secciones en general*/
 section{
@@ -20,13 +16,15 @@ section{
     padding-left: 50px;
     padding-right: 50px;
     border-bottom: solid black;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Entradas de texto */
 h1{
     font-size: 45px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     line-height: 50px;
     color: black;
 }
@@ -75,83 +73,119 @@ a{
 
 /* ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID  */
 
-/* Barra de navegacion */
+/* Barra de navegacion----------------------------------------------------------------------------------------------------------------------------------------------------- */
 #nav-bar{
     font-family: 'Merriweather Sans', sans-serif;
     position: fixed;
     width: 100%;
     background-color: #fbf5ea;
     text-align: center;
-    height: 80px;
+    height: auto;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
-
+#container-nav{
+    width: 350px;
+}
+#nav-bar__lista{
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+    gap:  10px;
+}
 /* Documentacion listas https://developer.mozilla.org/en-US/docs/Web/CSS/list-style  */
 #nav-bar #nav-bar__lista .nav-bar__tag{
+    /* display:inline-block;
+    text-align: center; */
     color: black;
-    display:inline-block;
     padding-top: 30px;
-    padding-right: 25px;
+    /* margin-right: 20px;  */
     padding-bottom: 20px;
-
     
 }
-#nav-bar #nav-bar__lista{
-    list-style: none; /* Oculta el punto de la lista desordenada  */
-    text-align:center; /*Centra la lista */
-    height: 80px;
-}
+
+
+
+
+
+/* Home ----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Configuracion por la barra de navegacion  */
 #section-home{
-    height: 650px;
-    padding-top: 200px;
+    height: 520px; 
+    padding-top: 100px;
+    margin-bottom: 0px;
     
 }
-#section-home__about-me{
+
+/* GRID  */
+#section-home img{
+    width: 110px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+#section-home p{
+    padding-top: 5px;
+    /* overflow: auto; */
+    overflow: visible;
+    height: auto;
+}
+
+/* Seccion Redes  -------------------------------------------------------------------------- -------------------------------------------------------------------------- */
+/* #redes{
     text-align: center;
 }
-/* Posiciona la barra de navegacion ordenada a la derecha 
-y deja de ser una lista con float */
+#redes i{
+    margin-right: 20px;
+} */
 
-/* Segunda seccion  */
-#section-project{
-    padding-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+#section-redes{
+    height: 175px;
 }
 
-/* Seccion proyectos FLEX */
-#section-project__container {
-    /* background-color: #e8aeae; */
+#section-home h5{
+    color: black;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+#section-redes{
+    height: 175px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 40%;
+    justify-items: center;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+#container-redes{
+    width: 200px ;
+}
+#container-redes #redes {
     display: flex;
-    flex-direction:  row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px 5px;
-    margin-top: 70px;
-} 
-#section-project__see-more{
-    display: block;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 15px;
-    margin-top: 70px;
-    border-radius: 50px;
-    border-color: transparent;
-    background-color: black;
-    font-family: 'League Spartan', sans-serif;
-    padding: 10px;
-    font-size: 18px;
-    width: 200px;
-    height: 40px;
-    color: #FCA700;
+    justify-content:space-between;
 }
 
-#section-project__see-more:hover{
-    background-color: #FCA700;
-    color: black;   
+#redes {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
 }
 
+#section-home{
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: 45% 30% 25%;
+    place-items: center;
+}
 
 /* Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases Clases  */
 
@@ -169,11 +203,52 @@ y deja de ser una lista con float */
     text-align: center;
 }
 
-/* Cambiar a footer en html */
-.redes-sociales{
-    margin-top: 200px;
-    margin-right: 10px;
-    float: right;
+
+
+
+
+/* Project  -------------------------------------------------------------------------- --------------------------------------------------------------------------*/
+#section-project{
+    height: 790%;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Seccion proyectos FLEX */
+#section-project__container {
+    /* background-color: #e8aeae;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 10px 80px; */
+    margin-top: 70px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+} 
+
+/* BOTON SEE MORE fuera del blocke  */
+#section-project__see-more{
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: black;
+    font-family: 'League Spartan', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    color: #FCA700;
+}
+
+#section-project__see-more:hover{
+    background-color: #FCA700;
+    color: black;   
 }
 
 /* Contenedores en seccion PROJECT FLEX */
@@ -186,7 +261,17 @@ y deja de ser una lista con float */
     margin-top: 15px;
 }
 
-/* boton */
+/* Ancho de ARTICLE  */
+.section-project__block{
+    width: 350px;
+    background-color: #fbf5ea;
+    border-radius: 50px;
+    margin: 20px;
+
+}
+
+
+/* Boton dentro del blocke */
 .section-project__block .section-project__info{
     margin-top: 15px;
     width: 100px;
@@ -213,22 +298,13 @@ y deja de ser una lista con float */
     
 }
 
-/* Ancho de ARTICLE  */
-.section-project__block{
-    width: 350px;
-    background-color: #fbf5ea;
-    border-radius: 50px;
-}
-
-
 /* Div centrado de seccion PROJECT */
 .section-project__project{
     text-align: center;
-    margin: autox;
+    margin: auto;
     color: black;
     margin: 0 auto;
     margin-top: 10px;
-    
 }
 
 /* Margenes entre iconos de redes en seccion PROJECT */
@@ -249,4 +325,52 @@ y deja de ser una lista con float */
     width: 200px;
     margin: auto;
     margin-bottom: 15px;
+}
+
+/* Seccion Skills  */
+#section-skills{
+    height: 790px;
+    padding-top: 70px;
+}
+
+#container-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    justify-items: center;
+    align-items: center;
+    margin-top: 130px;
+}
+#section-skills h4{
+    font-family: 'League Spartan', sans-serif;
+    color: black;
+    font-size: 25px;
+    /* margin-bottom: 70px; */
+}
+#container-skills .titulo{
+    font-size: 35px;
+}
+#container-skills .titulo, i {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (2, 1fr);
+    justify-items: center;
+    align-content: center; 
+    
+}
+
+#section-skills i{
+    color: black;
+    margin-top: 15px;
+    /* text-align: center; */
+}
+#container-skills #codes, #herramientas{
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+#container-skills #codes i, #herramientas i{
+    margin-right: 20px;
 }

@@ -31,36 +31,51 @@
 <body>
         <!-- Barra de navegacion  -->
         <nav id="nav-bar">
-            <ul id="nav-bar__lista">
-                <!-- Con el # podremos dirigirnos a la seccion que contenga el id: href="#home" ira a id="home"  -->
-                <li class="nav-bar__tag"><a class="nav-bar__section" href="#home">Home</a></li>
-                <li class="nav-bar__tag"><a class="nav-bar__section" href="#skills">Skills</a></li>
-                <li class="nav-bar__tag"><a class="nav-bar__section" href="#project">Project</a></li>
-                <li class="nav-bar__tag"><a class="nav-bar__section" href="#path">Path</a></li>
-                <!-- Boton Contact Me -->
-                <li class="nav-bar__tag"><a class="nav-bar__section" href="#contact">Contact me</a></li> 
-            </ul>
+            <div id="container-nav">
+                <ul id="nav-bar__lista">
+                    <!-- Con el # podremos dirigirnos a la seccion que contenga el id: href="#home" ira a id="home"  -->
+                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#section-home">Home</a></li>
+                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#section-project">Project</a></li>
+                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#section-skills">Skills</a></li>
+                    <!-- <li class="nav-bar__tag"><a class="nav-bar__section" href="#path">Path</a></li> -->
+                    <!-- Boton Contact Me -->
+                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#contact">Contact me</a></li> 
+                </ul>
+            </div>
         </nav>
         <!-- Primera pagina Home -->
         <section id="section-home">
             <!-- Buena practica seguir el orden de h1,h2,h3...h6 -->
-            <h1>Hello, i'am <a href="https://twitter.com/Elrond183273" target="_blank"><span>CARLOS</span></a></h1>
-            <p class="profesion">Analista Programador</p>
-            <p id="section-home__about-me">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the.
-            </p>
-            <!-- Redes Sociales -->
+            <div id="grid__img-perfil"> 
+                <img src="img/imagen-perfil.png">       
+            </div>
+            <div id="grid__perfil">
+                <h1>Hello, i'am <a href="https://twitter.com/Elrond183273" target="_blank"><span>CARLOS</span></a></h1>
+                <p class="profesion">Analista Programador</p>
+            </div>
+            <div id="grid__about-me">
+                <p id="section-home__about-me">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the.
+                </p>
+            </div>
+        </section>
+        <!-- Parte de Redes Sociales -->
             <!-- Imagenes Iconos  -->
             <!-- target="_blank" abre el link en otra ventana  -->
-            <!-- cambiar a footer  -->
-                <ul>
-                    <li class="redes-sociales"><a href="https://twitter.com/Elrond183273" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                    <li class="redes-sociales"><a href="https://discord.com/channels/elrond183273" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-                    <li class="redes-sociales"><a href="https://pin.it/3iRoVJd" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a></li>
-                    <li class="redes-sociales"><a href="https://open.spotify.com/user/31exk2ezzi7dqlkj7zq4zjtij6hq" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
-                </ul>
-        </section>
+        <section id="section-redes">
+            <!-- <h5>Follow Me</h5> -->
+            <article id="container-redes">
+                <div id="redes">
+                    <a href="https://twitter.com/Elrond183273" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://discord.com/channels/elrond183273" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://pin.it/3iRoVJd" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
+                    <a href="https://open.spotify.com/user/31exk2ezzi7dqlkj7zq4zjtij6hq" target="_blank"><i class="fa-brands fa-spotify"></i>
+                </div>
+            </article>
+            
+        </section> 
+        <!-- Parte de Projectos  -->
         <section id="section-project">
             <h1>SOME <span>PROJECTS</span>  </h1>
             <!-- Contenedor de proyectos  -->
@@ -101,8 +116,26 @@
             </div> 
             <div><button id="section-project__see-more" type="button">See more</button></div>  
         </section>
-        <section>
-            
+        <section id="section-skills">
+            <h1>PROFESSIONAL <span>SKILLS</span>  </h1>
+
+            <article id="container-skills">
+                <div class="titulo"><h4>Code <i class="fa-solid fa-code"></i></h4></div>
+                <div id="codes">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    
+                    </div>
+                </div>
+                <div class="titulo"><h4>Herramientas <i class="fa-solid fa-gear"></i></h4></div>
+                <div id="herramientas">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-markdown"></i>
+                    <i class="fa-brands fa-gitkraken"></i>
+                </div>
+            </article>
         </section>
 </body>
 </html>
