@@ -11,7 +11,7 @@ body{
 
 /* Secciones en general*/
 section{
-    height: 730px;
+    /* height: 730px; */
     margin-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
@@ -144,9 +144,6 @@ a{
     margin-right: 20px;
 } */
 
-#section-redes{
-    height: 175px;
-}
 
 #section-home h5{
     color: black;
@@ -155,7 +152,7 @@ a{
 }
 
 #section-redes{
-    height: 175px;
+    height: 290px;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -209,7 +206,7 @@ a{
 
 /* Project  -------------------------------------------------------------------------- --------------------------------------------------------------------------*/
 #section-project{
-    height: 790%;
+    height: 850px;
     padding-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
@@ -244,7 +241,9 @@ a{
     width: 200px;
     height: 40px;
     color: #FCA700;
+    box-shadow: 2px 3px  #fca800af;
 }
+
 
 #section-project__see-more:hover{
     background-color: #FCA700;
@@ -267,6 +266,8 @@ a{
     background-color: #fbf5ea;
     border-radius: 50px;
     margin: 20px;
+    /* Efecto sombra  */
+    box-shadow: 1px 1px  rgb(128, 128, 128);;
 
 }
 
@@ -283,6 +284,8 @@ a{
     font-family: 'League Spartan', sans-serif;
     color: black;
     background-color: #fca80091;
+    /* Efecto sombra  */
+    box-shadow: 2px 3px  rgb(128, 128, 128);;
 }
 .info-project:hover{
     background-color: #FCA700;
@@ -329,8 +332,8 @@ a{
 
 /* Seccion Skills  */
 #section-skills{
-    height: 790px;
-    padding-top: 70px;
+    height: 850px;
+    padding-top: 100px;
 }
 
 #container-skills{
@@ -374,3 +377,78 @@ a{
 #container-skills #codes i, #herramientas i{
     margin-right: 20px;
 }
+
+/* Seccion Contact me  */
+
+.contact-form{
+    color: black;
+}
+
+#section-contactme{
+    height: 750px;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#container-contactme{
+    margin-top: 100px;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-form{
+    display: grid;
+    grid-template-columns: 400px; 
+    justify-content:start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-form label{
+    font-weight: 600;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contact-form input, textarea{
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.425);
+    border-top:transparent ;
+    border-left: transparent;
+    border-right: transparent;
+    padding-left: 10px;
+}
+
+.contact-form textarea{
+    box-shadow: 2px 3px  rgb(128, 128, 128);;
+}
+.contact-form #name, #email{
+    height: 60px;
+}
+
+input::placeholder, textarea::placeholder{
+    padding-left: 10px;
+}
+
+.contact-form #message{
+    background-color: #fca80091;
+    
+}
+
+#boton-form{
+    /* align-content: center; */
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    border-color: transparent;
+    background-color: #fca80091;
+    grid-column: 2/3;
+    justify-self: center;
+    box-shadow: 2px 3px  rgb(128, 128, 128);;
+}
+

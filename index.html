@@ -29,7 +29,7 @@
 </head>
 <!-- Pagina web  -->
 <body>
-        <!-- Barra de navegacion  -->
+        <!-- Seccion Barra de navegacion  -->
         <nav id="nav-bar">
             <div id="container-nav">
                 <ul id="nav-bar__lista">
@@ -39,11 +39,11 @@
                     <li class="nav-bar__tag"><a class="nav-bar__section" href="#section-skills">Skills</a></li>
                     <!-- <li class="nav-bar__tag"><a class="nav-bar__section" href="#path">Path</a></li> -->
                     <!-- Boton Contact Me -->
-                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#contact">Contact me</a></li> 
+                    <li class="nav-bar__tag"><a class="nav-bar__section" href="#section-contactme">Contact me</a></li> 
                 </ul>
             </div>
         </nav>
-        <!-- Primera pagina Home -->
+        <!-- Seccion Home -->
         <section id="section-home">
             <!-- Buena practica seguir el orden de h1,h2,h3...h6 -->
             <div id="grid__img-perfil"> 
@@ -60,7 +60,7 @@
                 </p>
             </div>
         </section>
-        <!-- Parte de Redes Sociales -->
+        <!-- Seccion Redes Sociales -->
             <!-- Imagenes Iconos  -->
             <!-- target="_blank" abre el link en otra ventana  -->
         <section id="section-redes">
@@ -75,7 +75,7 @@
             </article>
             
         </section> 
-        <!-- Parte de Projectos  -->
+        <!-- Seccion Projectos  -->
         <section id="section-project">
             <h1>SOME <span>PROJECTS</span>  </h1>
             <!-- Contenedor de proyectos  -->
@@ -116,19 +116,23 @@
             </div> 
             <div><button id="section-project__see-more" type="button">See more</button></div>  
         </section>
+        <!-- Seccion Skills  -->
         <section id="section-skills">
             <h1>PROFESSIONAL <span>SKILLS</span>  </h1>
-
+            <!-- Contenedor  -->
             <article id="container-skills">
-                <div class="titulo"><h4>Code <i class="fa-solid fa-code"></i></h4></div>
+                <div class="titulo">
+                    <h4>Code <i class="fa-solid fa-code"></i></h4>
+                </div>
                 <div id="codes">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    
-                    </div>
+                    <i class="fa-brands fa-square-js"></i>     
                 </div>
-                <div class="titulo"><h4>Herramientas <i class="fa-solid fa-gear"></i></h4></div>
+                </div>
+                <div class="titulo">
+                    <h4>Herramientas <i class="fa-solid fa-gear"></i></h4>
+                </div>
                 <div id="herramientas">
                     <i class="fa-brands fa-github"></i>
                     <i class="fa-brands fa-git-alt"></i>
@@ -136,6 +140,31 @@
                     <i class="fa-brands fa-gitkraken"></i>
                 </div>
             </article>
+        </section>
+        <!-- Seccion Contacto  -->
+        <section id="section-contactme">
+            <h1>
+                CONTACT <span>ME</span>
+            </h1>
+            <div id="container-contactme">
+                <form action="#">
+                    <div class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" minlength="5" maxlength="20" size="23" placeholder="Harry Potter" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="mail">Mail address:</label>
+                        <input type="email" id="email" name="mail" minlength="5" maxlength="30" size="32" pattern=".+@globex\.com" size="30"  placeholder="username@email.com" required>
+                    </div>
+                    <div class="contact-form">
+                        <label for="message"> Message: </label>
+                        <textarea id="message" name="message" rows="8" cols="33" placeholder="Write a comment or opinion" required></textarea>
+                    </div>
+                    <div class="contact-form">
+                        <input id="boton-form" type="submit" name="boton" value="Send">
+                    </div> 
+                </form>
+            </div>   
         </section>
 </body>
 </html>
